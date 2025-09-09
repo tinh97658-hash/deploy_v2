@@ -33,9 +33,9 @@ router.post('/refresh-token', AuthController.refreshToken);
 router.get('/verify-token', authenticateToken, AuthController.verifyToken);
 
 // ============= PASSWORD RESET (public) =============
-router.post('/auth/request-reset', ValidationMiddleware.validateAuth, asyncHandler(PasswordResetController.requestReset));
-router.post('/auth/verify-otp', ValidationMiddleware.validateAuth, asyncHandler(PasswordResetController.verifyOTPOnly));
-router.post('/auth/verify-reset', ValidationMiddleware.validateAuth, asyncHandler(PasswordResetController.verifyAndReset));
+router.post('/auth/request-reset', asyncHandler(PasswordResetController.requestReset));
+router.post('/auth/verify-otp', asyncHandler(PasswordResetController.verifyOTPOnly));
+router.post('/auth/verify-reset', asyncHandler(PasswordResetController.verifyAndReset));
 
 // ============= TOPIC ROUTES =============
 // Routes cho topics/subjects

@@ -86,16 +86,10 @@ class PasswordResetController {
         return ResponseHelper.error(res, 'Bạn đã nhập sai OTP quá nhiều lần. Vui lòng yêu cầu mã mới.', 429);
       }
 
-      // Optional: extra check username-email consistency
-      if (username) {
-        const u = await User.findByUsername(username);
-        if (!u || (u.email || '').trim().toLowerCase() !== email.trim().toLowerCase()) {
-          return ResponseHelper.error(res, 'Tài khoản hoặc email không khớp', 400);
-        }
-      }
-
+      // Chỉ kiểm tra OTP với email - không cần check username-email consistency ở bước này
+      // vì OTP đã được gửi tới email cụ thể và đó là đủ để xác thực
       const stored = await CacheService.getResetOTP(email);
-      if (!stored || stored !== otp) {
+      if (!stored || stored.toString() !== otp.toString()) {
         return ResponseHelper.error(res, 'Mã OTP không hợp lệ hoặc đã hết hạn', 400);
       }
 

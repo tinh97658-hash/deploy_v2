@@ -253,9 +253,19 @@ const AuthenticationPage = () => {
                                             disabled={!/^\d{6}$/.test(otp)}
                                             onClick={async () => {
                                                 try {
-                                                    await verifyResetOtpOnly({ username: resetUsername, email: resetEmail, otp });
+                                                    console.log('Debug OTP verify:');
+                                                    console.log('- resetUsername:', resetUsername);
+                                                    console.log('- resetEmail:', resetEmail);
+                                                    console.log('- otp:', otp);
+                                                    console.log('- otp length:', otp?.length);
+                                                    
+                                                    const payload = { username: resetUsername, email: resetEmail, otp };
+                                                    console.log('- full payload:', JSON.stringify(payload));
+                                                    
+                                                    await verifyResetOtpOnly(payload);
                                                     setResetStep(3);
                                                 } catch (e) {
+                                                    console.error('OTP verify error:', e);
                                                     alert(e.message || 'Mã xác minh không hợp lệ hoặc đã hết hạn.');
                                                 }
                                             }}

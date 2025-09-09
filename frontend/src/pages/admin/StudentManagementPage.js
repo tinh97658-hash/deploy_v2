@@ -895,10 +895,6 @@ const AdminStudentsPage = () => {
                     <span>{currentStudent.class}</span>
                   </div>
                   <div className={styles.detailRow}>
-                    <label>Ngày sinh:</label>
-                    <span>{currentStudent.dateOfBirth || 'Chưa có ngày sinh'}</span>
-                  </div>
-                  <div className={styles.detailRow}>
                     <label>Ngành:</label>
                     <span>{currentStudent.major}</span>
                   </div>
