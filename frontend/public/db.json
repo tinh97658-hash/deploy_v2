@@ -1,0 +1,1144 @@
+{
+  "title": "Hệ thống quản lý học tập",
+  "stats": {
+    "totalStudents": 5000,
+    "completedStudents": 3250,
+    "inProgressStudents": 1500,
+    "notStartedStudents": 250
+  },
+  "recentActivities": [
+    {
+      "id": 1,
+      "student": "Nguyễn Văn A",
+      "action": "Hoàn thành Chuyên đề 1",
+      "time": "2 phút trước",
+      "type": "success"
+    },
+    {
+      "id": 2,
+      "student": "Trần Thị B",
+      "action": "Bắt đầu Chuyên đề 3",
+      "time": "5 phút trước",
+      "type": "info"
+    },
+    {
+      "id": 3,
+      "student": "Lê Văn C",
+      "action": "Làm lại Chuyên đề 2",
+      "time": "10 phút trước",
+      "type": "warning"
+    },
+    {
+      "id": 4,
+      "student": "Phạm Thị D",
+      "action": "Hoàn thành Chuyên đề 5",
+      "time": "15 phút trước",
+      "type": "success"
+    },
+    {
+      "id": 5,
+      "student": "Hoàng Văn E",
+      "action": "Đăng nhập hệ thống",
+      "time": "20 phút trước",
+      "type": "info"
+    }
+  ],
+  "topicProgress": [
+    {
+      "id": 1,
+      "name": "Chuyên đề 1",
+      "completed": 85,
+      "total": 100
+    },
+    {
+      "id": 2,
+      "name": "Chuyên đề 2",
+      "completed": 78,
+      "total": 100
+    },
+    {
+      "id": 3,
+      "name": "Chuyên đề 3",
+      "completed": 92,
+      "total": 100
+    },
+    {
+      "id": 4,
+      "name": "Chuyên đề 4",
+      "completed": 67,
+      "total": 100
+    },
+    {
+      "id": 5,
+      "name": "Chuyên đề 5",
+      "completed": 73,
+      "total": 100
+    }
+  ],
+  "subjects": [
+    {
+      "id": 1,
+      "name": "Chuyên đề 1: Tư tưởng Hồ Chí Minh",
+      "description": "Tìm hiểu về tư tưởng và đạo đức Hồ Chí Minh",
+      "totalQuestions": 20,
+      "timeLimit": 30,
+      "passScore": 80
+    },
+    {
+      "id": 2,
+      "name": "Chuyên đề 2: Lịch sử Đảng Cộng sản Việt Nam",
+      "description": "Lịch sử hình thành và phát triển của Đảng",
+      "totalQuestions": 20,
+      "timeLimit": 30,
+      "passScore": 80
+    },
+    {
+      "id": 3,
+      "name": "Chuyên đề 3: Pháp luật Việt Nam",
+      "description": "Các quy định pháp luật cơ bản",
+      "totalQuestions": 20,
+      "timeLimit": 30,
+      "passScore": 80
+    },
+    {
+      "id": 4,
+      "name": "Chuyên đề 4: Kinh tế chính trị",
+      "description": "Kiến thức về kinh tế chính trị Marxist-Leninist",
+      "totalQuestions": 20,
+      "timeLimit": 30,
+      "passScore": 80
+    },
+    {
+      "id": 5,
+      "name": "Chuyên đề 5: Chủ nghĩa xã hội khoa học",
+      "description": "Lý luận về chủ nghĩa xã hội khoa học",
+      "totalQuestions": 20,
+      "timeLimit": 30,
+      "passScore": 80
+    }
+  ],
+  "quizzes": [
+    {
+      "subjectId": 1,
+      "questions": [
+        {
+          "id": 1,
+          "question": "Hồ Chí Minh sinh năm nào?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "1890", "isCorrect": true },
+            { "id": "b", "text": "1889", "isCorrect": false },
+            { "id": "c", "text": "1891", "isCorrect": false },
+            { "id": "d", "text": "1892", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 2,
+          "question": "Những phẩm chất đạo đức nào sau đây là của Hồ Chí Minh?",
+          "type": "multiple",
+          "options": [
+            { "id": "a", "text": "Cần", "isCorrect": true },
+            { "id": "b", "text": "Kiệm", "isCorrect": true },
+            { "id": "c", "text": "Liêm", "isCorrect": true },
+            { "id": "d", "text": "Chính", "isCorrect": true }
+          ]
+        },
+        {
+          "id": 3,
+          "question": "Tác phẩm 'Đường Kách mệnh' được Hồ Chí Minh viết năm nào?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "1925", "isCorrect": false },
+            { "id": "b", "text": "1927", "isCorrect": true },
+            { "id": "c", "text": "1930", "isCorrect": false },
+            { "id": "d", "text": "1932", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 4,
+          "question": "Hồ Chí Minh đã sử dụng những bút danh nào?",
+          "type": "multiple",
+          "options": [
+            { "id": "a", "text": "Nguyễn Ái Quốc", "isCorrect": true },
+            { "id": "b", "text": "Lý Thụy", "isCorrect": true },
+            { "id": "c", "text": "Nguyễn Tất Thành", "isCorrect": false },
+            { "id": "d", "text": "Bác Hồ", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 5,
+          "question": "Hồ Chí Minh mất năm nào?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "1968", "isCorrect": false },
+            { "id": "b", "text": "1969", "isCorrect": true },
+            { "id": "c", "text": "1970", "isCorrect": false },
+            { "id": "d", "text": "1971", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 6,
+          "question": "Tư tưởng Hồ Chí Minh có những đặc điểm gì?",
+          "type": "multiple",
+          "options": [
+            { "id": "a", "text": "Tính dân tộc", "isCorrect": true },
+            { "id": "b", "text": "Tính khoa học", "isCorrect": true },
+            { "id": "c", "text": "Tính thời đại", "isCorrect": true },
+            { "id": "d", "text": "Tính nhân văn", "isCorrect": true }
+          ]
+        },
+        {
+          "id": 7,
+          "question": "Hồ Chí Minh thành lập Đảng Cộng sản Việt Nam năm nào?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "1929", "isCorrect": false },
+            { "id": "b", "text": "1930", "isCorrect": true },
+            { "id": "c", "text": "1931", "isCorrect": false },
+            { "id": "d", "text": "1932", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 8,
+          "question": "Những nguyên tắc đạo đức của Hồ Chí Minh bao gồm:",
+          "type": "multiple",
+          "options": [
+            { "id": "a", "text": "Yêu nước", "isCorrect": true },
+            { "id": "b", "text": "Yêu dân", "isCorrect": true },
+            { "id": "c", "text": "Yêu lao động", "isCorrect": true },
+            { "id": "d", "text": "Yêu khoa học", "isCorrect": true }
+          ]
+        },
+        {
+          "id": 9,
+          "question": "Hồ Chí Minh đọc Tuyên ngôn Độc lập ngày nào?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "2/9/1945", "isCorrect": true },
+            { "id": "b", "text": "1/9/1945", "isCorrect": false },
+            { "id": "c", "text": "3/9/1945", "isCorrect": false },
+            { "id": "d", "text": "30/8/1945", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 10,
+          "question": "Tư tưởng Hồ Chí Minh về xây dựng con người mới có những nội dung gì?",
+          "type": "multiple",
+          "options": [
+            { "id": "a", "text": "Có đạo đức", "isCorrect": true },
+            { "id": "b", "text": "Có tri thức", "isCorrect": true },
+            { "id": "c", "text": "Có kỹ năng", "isCorrect": true },
+            { "id": "d", "text": "Có thể lực", "isCorrect": true }
+          ]
+        },
+        {
+          "id": 11,
+          "question": "Hồ Chí Minh ra nước ngoài tìm đường cứu nước năm nào?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "1910", "isCorrect": false },
+            { "id": "b", "text": "1911", "isCorrect": true },
+            { "id": "c", "text": "1912", "isCorrect": false },
+            { "id": "d", "text": "1913", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 12,
+          "question": "Những tác phẩm nổi tiếng của Hồ Chí Minh:",
+          "type": "multiple",
+          "options": [
+            { "id": "a", "text": "Nhật ký trong tù", "isCorrect": true },
+            { "id": "b", "text": "Đường Kách mệnh", "isCorrect": true },
+            { "id": "c", "text": "Tự thức", "isCorrect": true },
+            { "id": "d", "text": "Di chúc", "isCorrect": true }
+          ]
+        },
+        {
+          "id": 13,
+          "question": "Hồ Chí Minh được tôn vinh là gì?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Anh hùng dân tộc", "isCorrect": false },
+            { "id": "b", "text": "Danh nhân văn hóa thế giới", "isCorrect": true },
+            { "id": "c", "text": "Lãnh tụ vĩ đại", "isCorrect": false },
+            { "id": "d", "text": "Chủ tịch nước", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 14,
+          "question": "Tư tưởng Hồ Chí Minh về độc lập dân tộc gắn liền với:",
+          "type": "multiple",
+          "options": [
+            { "id": "a", "text": "Chủ nghĩa xã hội", "isCorrect": true },
+            { "id": "b", "text": "Dân chủ", "isCorrect": true },
+            { "id": "c", "text": "Tự do", "isCorrect": true },
+            { "id": "d", "text": "Hạnh phúc", "isCorrect": true }
+          ]
+        },
+        {
+          "id": 15,
+          "question": "Hồ Chí Minh gia nhập Đảng Cộng sản Pháp năm nào?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "1920", "isCorrect": true },
+            { "id": "b", "text": "1919", "isCorrect": false },
+            { "id": "c", "text": "1921", "isCorrect": false },
+            { "id": "d", "text": "1922", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 16,
+          "question": "Phong cách Hồ Chí Minh thể hiện qua:",
+          "type": "multiple",
+          "options": [
+            { "id": "a", "text": "Giản dị", "isCorrect": true },
+            { "id": "b", "text": "Gần gũi", "isCorrect": true },
+            { "id": "c", "text": "Khiêm tốn", "isCorrect": true },
+            { "id": "d", "text": "Chân thành", "isCorrect": true }
+          ]
+        },
+        {
+          "id": 17,
+          "question": "Hồ Chí Minh được bầu làm Chủ tịch nước năm nào?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "1945", "isCorrect": false },
+            { "id": "b", "text": "1946", "isCorrect": true },
+            { "id": "c", "text": "1947", "isCorrect": false },
+            { "id": "d", "text": "1948", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 18,
+          "question": "Tư tưởng Hồ Chí Minh về giáo dục bao gồm:",
+          "type": "multiple",
+          "options": [
+            { "id": "a", "text": "Học đi đôi với hành", "isCorrect": true },
+            { "id": "b", "text": "Lý luận kết hợp thực tiễn", "isCorrect": true },
+            { "id": "c", "text": "Giáo dục toàn diện", "isCorrect": true },
+            { "id": "d", "text": "Học tập suốt đời", "isCorrect": true }
+          ]
+        },
+        {
+          "id": 19,
+          "question": "Hồ Chí Minh thành lập Mặt trận Việt Minh năm nào?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "1940", "isCorrect": false },
+            { "id": "b", "text": "1941", "isCorrect": true },
+            { "id": "c", "text": "1942", "isCorrect": false },
+            { "id": "d", "text": "1943", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 20,
+          "question": "Giá trị cốt lõi của tư tưởng Hồ Chí Minh là:",
+          "type": "multiple",
+          "options": [
+            { "id": "a", "text": "Độc lập dân tộc", "isCorrect": true },
+            { "id": "b", "text": "Chủ nghĩa xã hội", "isCorrect": true },
+            { "id": "c", "text": "Dân chủ", "isCorrect": true },
+            { "id": "d", "text": "Văn minh", "isCorrect": true }
+          ]
+        }
+      ]
+    },
+    {
+      "subjectId": 2,
+      "questions": [
+        {
+          "id": 1,
+          "question": "Lịch sử Đảng Cộng sản Việt Nam được chia thành mấy giai đoạn?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "2", "isCorrect": false },
+            { "id": "b", "text": "3", "isCorrect": true },
+            { "id": "c", "text": "4", "isCorrect": false },
+            { "id": "d", "text": "5", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 2,
+          "question": "Đảng Cộng sản Việt Nam ra đời vào năm nào?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "1930", "isCorrect": true },
+            { "id": "b", "text": "1929", "isCorrect": false },
+            { "id": "c", "text": "1931", "isCorrect": false },
+            { "id": "d", "text": "1932", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 3,
+          "question": "Ai là người sáng lập Đảng Cộng sản Việt Nam?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Lê Nin", "isCorrect": false },
+            { "id": "b", "text": "Nguyễn Ái Quốc", "isCorrect": true },
+            { "id": "c", "text": "Trường Chinh", "isCorrect": false },
+            { "id": "d", "text": "Đồng chí X", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 4,
+          "question": "Chủ nghĩa Mác - Lê nin được Đảng Cộng sản Việt Nam vận dụng vào điều kiện Việt Nam trong thời kỳ nào?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "1930-1945", "isCorrect": true },
+            { "id": "b", "text": "1945-1954", "isCorrect": false },
+            { "id": "c", "text": "1954-1975", "isCorrect": false },
+            { "id": "d", "text": "1975-1986", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 5,
+          "question": "Đại hội đại biểu toàn quốc lần thứ nhất của Đảng Cộng sản Việt Nam diễn ra vào năm nào?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "1935", "isCorrect": true },
+            { "id": "b", "text": "1945", "isCorrect": false },
+            { "id": "c", "text": "1951", "isCorrect": false },
+            { "id": "d", "text": "1960", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 6,
+          "question": "Mục tiêu trước mắt của cách mạng Việt Nam sau khi Đảng Cộng sản ra đời là gì?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Giành độc lập dân tộc", "isCorrect": true },
+            { "id": "b", "text": "Xây dựng chủ nghĩa xã hội", "isCorrect": false },
+            { "id": "c", "text": "Thống nhất đất nước", "isCorrect": false },
+            { "id": "d", "text": "Bảo vệ tổ quốc", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 7,
+          "question": "Ai là tác giả của tác phẩm 'Đường Kách mệnh'?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Hồ Chí Minh", "isCorrect": true },
+            { "id": "b", "text": "Lê Nin", "isCorrect": false },
+            { "id": "c", "text": "Trường Chinh", "isCorrect": false },
+            { "id": "d", "text": "Đồng chí X", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 8,
+          "question": "Nội dung cơ bản của Luận cương chính trị tháng 10 năm 1930 của Đảng Cộng sản Việt Nam là gì?",
+          "type": "multiple",
+          "options": [
+            { "id": "a", "text": "Đường lối kháng chiến chống thực dân Pháp", "isCorrect": true },
+            { "id": "b", "text": "Đường lối xây dựng chủ nghĩa xã hội", "isCorrect": false },
+            { "id": "c", "text": "Đường lối thống nhất đất nước", "isCorrect": false },
+            { "id": "d", "text": "Đường lối bảo vệ tổ quốc", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 9,
+          "question": "Đảng Cộng sản Việt Nam lãnh đạo cuộc kháng chiến chống thực dân Pháp xâm lược từ năm nào?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "1945", "isCorrect": false },
+            { "id": "b", "text": "1946", "isCorrect": true },
+            { "id": "c", "text": "1947", "isCorrect": false },
+            { "id": "d", "text": "1948", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 10,
+          "question": "Chiến dịch nào đánh dấu sự kết thúc của cuộc kháng chiến chống thực dân Pháp xâm lược ở Việt Nam?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Chiến dịch Điện Biên Phủ", "isCorrect": true },
+            { "id": "b", "text": "Chiến dịch Hồ Chí Minh", "isCorrect": false },
+            { "id": "c", "text": "Chiến dịch Bắc Sơn", "isCorrect": false },
+            { "id": "d", "text": "Chiến dịch Trung Du", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 11,
+          "question": "Đại hội đại biểu toàn quốc lần thứ hai của Đảng Cộng sản Việt Nam diễn ra vào năm nào?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "1951", "isCorrect": true },
+            { "id": "b", "text": "1954", "isCorrect": false },
+            { "id": "c", "text": "1960", "isCorrect": false },
+            { "id": "d", "text": "1975", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 12,
+          "question": "Ai là Tổng tư lệnh đầu tiên của Quân đội nhân dân Việt Nam?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Võ Nguyên Giáp", "isCorrect": true },
+            { "id": "b", "text": "Lê Trọng Tấn", "isCorrect": false },
+            { "id": "c", "text": "Nguyễn Chí Thanh", "isCorrect": false },
+            { "id": "d", "text": "Đồng chí X", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 13,
+          "question": "Nội dung cơ bản của Hiến pháp đầu tiên của nước Việt Nam Dân chủ Cộng hòa (1946) là gì?",
+          "type": "multiple",
+          "options": [
+            { "id": "a", "text": "Xác định hình thức nhà nước Việt Nam là Cộng hòa dân chủ", "isCorrect": true },
+            { "id": "b", "text": "Xác định Đảng Cộng sản Việt Nam là lực lượng lãnh đạo duy nhất", "isCorrect": false },
+            { "id": "c", "text": "Xác định quyền lực nhà nước thuộc về nhân dân", "isCorrect": true },
+            { "id": "d", "text": "Cả a và c đều đúng", "isCorrect": true }
+          ]
+        },
+        {
+          "id": 14,
+          "question": "Đảng Cộng sản Việt Nam lãnh đạo cuộc kháng chiến chống Mỹ, cứu nước từ năm nào?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "1954", "isCorrect": false },
+            { "id": "b", "text": "1960", "isCorrect": true },
+            { "id": "c", "text": "1965", "isCorrect": false },
+            { "id": "d", "text": "1975", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 15,
+          "question": "Chiến dịch nào đánh dấu sự kiện 30/4/1975 trong lịch sử Việt Nam?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Chiến dịch Hồ Chí Minh", "isCorrect": true },
+            { "id": "b", "text": "Chiến dịch Điện Biên Phủ", "isCorrect": false },
+            { "id": "c", "text": "Chiến dịch Bắc Sơn", "isCorrect": false },
+            { "id": "d", "text": "Chiến dịch Trung Du", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 16,
+          "question": "Ai là người ký Hiệp định Paris chấm dứt chiến tranh, lập lại hòa bình ở Việt Nam năm 1973?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Hồ Chí Minh", "isCorrect": false },
+            { "id": "b", "text": "Lê Duẩn", "isCorrect": true },
+            { "id": "c", "text": "Phạm Văn Đồng", "isCorrect": false },
+            { "id": "d", "text": "Đồng chí X", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 17,
+          "question": "Nội dung cơ bản của đường lối đổi mới do Đảng Cộng sản Việt Nam khởi xướng từ năm 1986 là gì?",
+          "type": "multiple",
+          "options": [
+            { "id": "a", "text": "Tiếp tục duy trì chế độ bao cấp", "isCorrect": false },
+            { "id": "b", "text": "Chuyển sang nền kinh tế thị trường định hướng xã hội chủ nghĩa", "isCorrect": true },
+            { "id": "c", "text": "Tăng cường quản lý nhà nước về kinh tế", "isCorrect": true },
+            { "id": "d", "text": "Cả b và c đều đúng", "isCorrect": true }
+          ]
+        },
+        {
+          "id": 18,
+          "question": "Ai là Tổng bí thư đầu tiên của Đảng Cộng sản Việt Nam sau khi đất nước thống nhất?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Đỗ Mười", "isCorrect": true },
+            { "id": "b", "text": "Lê Duẩn", "isCorrect": false },
+            { "id": "c", "text": "Trường Chinh", "isCorrect": false },
+            { "id": "d", "text": "Đồng chí X", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 19,
+          "question": "Đảng Cộng sản Việt Nam tổ chức thành công cuộc tổng tiến công và nổi dậy mùa xuân năm 1975 trong chiến dịch nào?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Chiến dịch Hồ Chí Minh", "isCorrect": true },
+            { "id": "b", "text": "Chiến dịch Điện Biên Phủ", "isCorrect": false },
+            { "id": "c", "text": "Chiến dịch Bắc Sơn", "isCorrect": false },
+            { "id": "d", "text": "Chiến dịch Trung Du", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 20,
+          "question": "Giá trị cốt lõi của tư tưởng Hồ Chí Minh là:",
+          "type": "multiple",
+          "options": [
+            { "id": "a", "text": "Độc lập dân tộc", "isCorrect": true },
+            { "id": "b", "text": "Chủ nghĩa xã hội", "isCorrect": true },
+            { "id": "c", "text": "Dân chủ", "isCorrect": true },
+            { "id": "d", "text": "Văn minh", "isCorrect": true }
+          ]
+        }
+      ]
+    },
+    {
+      "subjectId": 3,
+      "questions": [
+        {
+          "id": 1,
+          "question": "Pháp luật là gì?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Là hệ thống các quy tắc ứng xử do Nhà nước ban hành", "isCorrect": true },
+            { "id": "b", "text": "Là các quy tắc ứng xử mang tính chất đạo đức", "isCorrect": false },
+            { "id": "c", "text": "Là các quy tắc do tổ chức xã hội ban hành", "isCorrect": false },
+            { "id": "d", "text": "Là các quy tắc do cá nhân tự đặt ra", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 2,
+          "question": "Ai là người soạn thảo bản Hiến pháp đầu tiên của nước Việt Nam Dân chủ Cộng hòa?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Hồ Chí Minh", "isCorrect": true },
+            { "id": "b", "text": "Trường Chinh", "isCorrect": false },
+            { "id": "c", "text": "Lê Duẩn", "isCorrect": false },
+            { "id": "d", "text": "Đồng chí X", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 3,
+          "question": "Luật nào quy định về tổ chức và hoạt động của Quốc hội nước Cộng hòa xã hội chủ nghĩa Việt Nam?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Luật Tổ chức Quốc hội", "isCorrect": true },
+            { "id": "b", "text": "Luật Hoạt động giám sát của Quốc hội", "isCorrect": false },
+            { "id": "c", "text": "Luật Ban hành văn bản quy phạm pháp luật", "isCorrect": false },
+            { "id": "d", "text": "Luật Đầu tư công", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 4,
+          "question": "Quốc hội nước Cộng hòa xã hội chủ nghĩa Việt Nam có bao nhiêu đại biểu?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "375", "isCorrect": false },
+            { "id": "b", "text": "450", "isCorrect": true },
+            { "id": "c", "text": "500", "isCorrect": false },
+            { "id": "d", "text": "600", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 5,
+          "question": "Chức năng nào sau đây không phải là chức năng của Quốc hội nước Cộng hòa xã hội chủ nghĩa Việt Nam?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Lập hiến", "isCorrect": false },
+            { "id": "b", "text": "Lập pháp", "isCorrect": false },
+            { "id": "c", "text": "Thi hành án", "isCorrect": true },
+            { "id": "d", "text": "Giám sát tối cao", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 6,
+          "question": "Ai có quyền đề xuất sửa đổi, bổ sung Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Chủ tịch nước", "isCorrect": false },
+            { "id": "b", "text": "Thủ tướng Chính phủ", "isCorrect": false },
+            { "id": "c", "text": "Đại biểu Quốc hội", "isCorrect": true },
+            { "id": "d", "text": "Đảng Cộng sản Việt Nam", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 7,
+          "question": "Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam được thông qua vào năm nào?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "1946", "isCorrect": true },
+            { "id": "b", "text": "1959", "isCorrect": false },
+            { "id": "c", "text": "1980", "isCorrect": false },
+            { "id": "d", "text": "1992", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 8,
+          "question": "Nội dung nào sau đây không phải là quyền hạn của Quốc hội nước Cộng hòa xã hội chủ nghĩa Việt Nam?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Quyết định các vấn đề quan trọng của đất nước", "isCorrect": false },
+            { "id": "b", "text": "Bầu ra Chính phủ", "isCorrect": false },
+            { "id": "c", "text": "Giám sát hoạt động của Chính phủ", "isCorrect": false },
+            { "id": "d", "text": "Ký kết các điều ước quốc tế", "isCorrect": true }
+          ]
+        },
+        {
+          "id": 9,
+          "question": "Chủ tịch nước Cộng hòa xã hội chủ nghĩa Việt Nam do ai bầu?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Quốc hội", "isCorrect": true },
+            { "id": "b", "text": "Chính phủ", "isCorrect": false },
+            { "id": "c", "text": "Đảng Cộng sản Việt Nam", "isCorrect": false },
+            { "id": "d", "text": "Nhân dân", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 10,
+          "question": "Chức vụ nào đứng đầu hệ thống cơ quan hành chính nhà nước ở trung ương?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Thủ tướng Chính phủ", "isCorrect": true },
+            { "id": "b", "text": "Chủ tịch nước", "isCorrect": false },
+            { "id": "c", "text": "Chủ tịch Quốc hội", "isCorrect": false },
+            { "id": "d", "text": "Bộ trưởng", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 11,
+          "question": "Nội dung nào sau đây không phải là nhiệm vụ của Chính phủ nước Cộng hòa xã hội chủ nghĩa Việt Nam?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Thực hiện hiến pháp, luật và các văn bản của Quốc hội", "isCorrect": false },
+            { "id": "b", "text": "Quản lý nhà nước về kinh tế, văn hóa, xã hội", "isCorrect": false },
+            { "id": "c", "text": "Bảo vệ an ninh quốc gia, trật tự an toàn xã hội", "isCorrect": false },
+            { "id": "d", "text": "Tổ chức bầu cử Quốc hội", "isCorrect": true }
+          ]
+        },
+        {
+          "id": 12,
+          "question": "Ai là người đứng đầu Chính phủ nước Cộng hòa xã hội chủ nghĩa Việt Nam?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Chủ tịch nước", "isCorrect": false },
+            { "id": "b", "text": "Thủ tướng Chính phủ", "isCorrect": true },
+            { "id": "c", "text": "Chủ tịch Quốc hội", "isCorrect": false },
+            { "id": "d", "text": "Bộ trưởng", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 13,
+          "question": "Chính phủ nước Cộng hòa xã hội chủ nghĩa Việt Nam có bao nhiêu thành viên?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "15", "isCorrect": false },
+            { "id": "b", "text": "20", "isCorrect": false },
+            { "id": "c", "text": "25", "isCorrect": true },
+            { "id": "d", "text": "30", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 14,
+          "question": "Nội dung nào sau đây không phải là quyền hạn của Thủ tướng Chính phủ nước Cộng hòa xã hội chủ nghĩa Việt Nam?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Quyết định các vấn đề quan trọng của đất nước", "isCorrect": false },
+            { "id": "b", "text": "Bổ nhiệm, miễn nhiệm, cách chức Bộ trưởng, Thủ trưởng cơ quan ngang bộ", "isCorrect": false },
+            { "id": "c", "text": "Ký kết các điều ước quốc tế", "isCorrect": true },
+            { "id": "d", "text": "Giám sát, kiểm tra việc thi hành hiến pháp, luật và các văn bản của Quốc hội", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 15,
+          "question": "Chủ tịch nước Cộng hòa xã hội chủ nghĩa Việt Nam có quyền hạn gì?",
+          "type": "multiple",
+          "options": [
+            { "id": "a", "text": "Đại diện cho Nhà nước Cộng hòa xã hội chủ nghĩa Việt Nam trong quan hệ đối ngoại", "isCorrect": true },
+            { "id": "b", "text": "Ký lệnh công bố hiến pháp, luật và các văn bản của Quốc hội", "isCorrect": true },
+            { "id": "c", "text": "Bổ nhiệm, miễn nhiệm Thủ tướng Chính phủ", "isCorrect": true },
+            { "id": "d", "text": "Tất cả các ý trên đều đúng", "isCorrect": true }
+          ]
+        },
+        {
+          "id": 16,
+          "question": "Nội dung nào sau đây không phải là nhiệm vụ của Bộ trưởng, Thủ trưởng cơ quan ngang bộ?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Thực hiện hiến pháp, luật và các văn bản của Quốc hội", "isCorrect": false },
+            { "id": "b", "text": "Quản lý nhà nước về lĩnh vực được giao", "isCorrect": false },
+            { "id": "c", "text": "Bảo vệ an ninh quốc gia, trật tự an toàn xã hội", "isCorrect": false },
+            { "id": "d", "text": "Tổ chức bầu cử Quốc hội", "isCorrect": true }
+          ]
+        },
+        {
+          "id": 17,
+          "question": "Chính phủ nước Cộng hòa xã hội chủ nghĩa Việt Nam chịu trách nhiệm trước ai?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Quốc hội", "isCorrect": true },
+            { "id": "b", "text": "Chủ tịch nước", "isCorrect": false },
+            { "id": "c", "text": "Đảng Cộng sản Việt Nam", "isCorrect": false },
+            { "id": "d", "text": "Nhân dân", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 18,
+          "question": "Quốc hội nước Cộng hòa xã hội chủ nghĩa Việt Nam họp bao nhiêu lần trong một năm?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "2 lần", "isCorrect": false },
+            { "id": "b", "text": "3 lần", "isCorrect": true },
+            { "id": "c", "text": "4 lần", "isCorrect": false },
+            { "id": "d", "text": "6 lần", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 19,
+          "question": "Chủ tịch nước Cộng hòa xã hội chủ nghĩa Việt Nam được bầu bởi ai?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Quốc hội", "isCorrect": true },
+            { "id": "b", "text": "Chính phủ", "isCorrect": false },
+            { "id": "c", "text": "Đảng Cộng sản Việt Nam", "isCorrect": false },
+            { "id": "d", "text": "Nhân dân", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 20,
+          "question": "Chức vụ nào đứng đầu hệ thống cơ quan hành chính nhà nước ở địa phương?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Chủ tịch Ủy ban nhân dân", "isCorrect": true },
+            { "id": "b", "text": "Giám đốc sở", "isCorrect": false },
+            { "id": "c", "text": "Chủ tịch Hội đồng nhân dân", "isCorrect": false },
+            { "id": "d", "text": "Bí thư tỉnh ủy", "isCorrect": false }
+          ]
+        }
+      ]
+    },
+    {
+      "subjectId": 4,
+      "questions": [
+        {
+          "id": 1,
+          "question": "Kinh tế chính trị là gì?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Là môn khoa học nghiên cứu về sự sản xuất, phân phối, trao đổi và tiêu dùng hàng hóa, dịch vụ", "isCorrect": true },
+            { "id": "b", "text": "Là môn khoa học nghiên cứu về sự hình thành và phát triển của các tổ chức kinh tế", "isCorrect": false },
+            { "id": "c", "text": "Là môn khoa học nghiên cứu về các chính sách kinh tế của Nhà nước", "isCorrect": false },
+            { "id": "d", "text": "Là môn khoa học nghiên cứu về tâm lý và hành vi tiêu dùng của con người", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 2,
+          "question": "Ai là người sáng lập ra chủ nghĩa Mác - Lênin?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Karl Marx và Friedrich Engels", "isCorrect": true },
+            { "id": "b", "text": "Vladimir Ilyich Lenin", "isCorrect": false },
+            { "id": "c", "text": "Hồ Chí Minh", "isCorrect": false },
+            { "id": "d", "text": "Đồng chí X", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 3,
+          "question": "Chủ nghĩa xã hội là gì?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Là chế độ xã hội mà trong đó các phương tiện sản xuất được sở hữu chung hoặc sở hữu nhà nước", "isCorrect": true },
+            { "id": "b", "text": "Là chế độ xã hội mà trong đó tư liệu sản xuất thuộc về tư nhân", "isCorrect": false },
+            { "id": "c", "text": "Là chế độ xã hội không có giai cấp, không có nhà nước", "isCorrect": false },
+            { "id": "d", "text": "Là chế độ xã hội mà trong đó mọi người đều bình đẳng về quyền lợi và nghĩa vụ", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 4,
+          "question": "Ai là người đề xướng ra chính sách đổi mới ở Việt Nam?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Đỗ Mười", "isCorrect": true },
+            { "id": "b", "text": "Lê Duẩn", "isCorrect": false },
+            { "id": "c", "text": "Trường Chinh", "isCorrect": false },
+            { "id": "d", "text": "Đồng chí X", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 5,
+          "question": "Nội dung cơ bản của đường lối đổi mới ở Việt Nam từ năm 1986 là gì?",
+          "type": "multiple",
+          "options": [
+            { "id": "a", "text": "Chuyển từ nền kinh tế kế hoạch hóa tập trung sang nền kinh tế thị trường định hướng xã hội chủ nghĩa", "isCorrect": true },
+            { "id": "b", "text": "Tăng cường vai trò của Nhà nước trong nền kinh tế", "isCorrect": true },
+            { "id": "c", "text": "Khuyến khích mọi thành phần kinh tế phát triển", "isCorrect": true },
+            { "id": "d", "text": "Tất cả các ý trên đều đúng", "isCorrect": true }
+          ]
+        },
+        {
+          "id": 6,
+          "question": "Ai là tác giả của tác phẩm 'Tư bản' nổi tiếng?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Adam Smith", "isCorrect": false },
+            { "id": "b", "text": "David Ricardo", "isCorrect": false },
+            { "id": "c", "text": "Karl Marx", "isCorrect": true },
+            { "id": "d", "text": "John Maynard Keynes", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 7,
+          "question": "Chủ nghĩa tư bản là gì?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Là chế độ kinh tế mà trong đó tư liệu sản xuất thuộc về tư nhân và được sử dụng nhằm mục đích kiếm lợi nhuận", "isCorrect": true },
+            { "id": "b", "text": "Là chế độ kinh tế mà trong đó nhà nước sở hữu toàn bộ tư liệu sản xuất", "isCorrect": false },
+            { "id": "c", "text": "Là chế độ kinh tế không có sự can thiệp của nhà nước", "isCorrect": false },
+            { "id": "d", "text": "Là chế độ kinh tế mà trong đó mọi người đều bình đẳng về quyền lợi và nghĩa vụ", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 8,
+          "question": "Ai là người sáng lập ra nước Việt Nam Dân chủ Cộng hòa?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Hồ Chí Minh", "isCorrect": true },
+            { "id": "b", "text": "Võ Nguyên Giáp", "isCorrect": false },
+            { "id": "c", "text": "Trường Chinh", "isCorrect": false },
+            { "id": "d", "text": "Đồng chí X", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 9,
+          "question": "Nội dung cơ bản của tư tưởng Hồ Chí Minh về kinh tế là gì?",
+          "type": "multiple",
+          "options": [
+            { "id": "a", "text": "Phát triển kinh tế phải gắn liền với phát triển văn hóa, xã hội", "isCorrect": true },
+            { "id": "b", "text": "Kinh tế phải do Nhà nước quản lý tập trung", "isCorrect": false },
+            { "id": "c", "text": "Phát triển kinh tế tư nhân là chủ yếu", "isCorrect": false },
+            { "id": "d", "text": "Kinh tế phải phục vụ cho lợi ích của nhân dân", "isCorrect": true }
+          ]
+        },
+        {
+          "id": 10,
+          "question": "Chủ nghĩa xã hội khoa học là gì?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Là học thuyết khoa học nghiên cứu về sự hình thành, phát triển và quy luật khách quan của chủ nghĩa xã hội", "isCorrect": true },
+            { "id": "b", "text": "Là học thuyết chính trị của Đảng Cộng sản", "isCorrect": false },
+            { "id": "c", "text": "Là học thuyết kinh tế về chủ nghĩa xã hội", "isCorrect": false },
+            { "id": "d", "text": "Là học thuyết đạo đức về chủ nghĩa xã hội", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 11,
+          "question": "Ai là người sáng lập ra Đảng Cộng sản Việt Nam?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Nguyễn Ái Quốc", "isCorrect": true },
+            { "id": "b", "text": "Lê Nin", "isCorrect": false },
+            { "id": "c", "text": "Trường Chinh", "isCorrect": false },
+            { "id": "d", "text": "Đồng chí X", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 12,
+          "question": "Nội dung cơ bản của tư tưởng Hồ Chí Minh về văn hóa là gì?",
+          "type": "multiple",
+          "options": [
+            { "id": "a", "text": "Văn hóa phải phục vụ cho sự nghiệp cách mạng", "isCorrect": true },
+            { "id": "b", "text": "Phát triển văn hóa phải gắn liền với phát triển kinh tế", "isCorrect": true },
+            { "id": "c", "text": "Văn hóa là sản phẩm của lao động sáng tạo", "isCorrect": true },
+            { "id": "d", "text": "Tất cả các ý trên đều đúng", "isCorrect": true }
+          ]
+        },
+        {
+          "id": 13,
+          "question": "Chủ nghĩa xã hội ở Việt Nam được xây dựng trên cơ sở nào?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Trên cơ sở vật chất kỹ thuật đã được hình thành", "isCorrect": true },
+            { "id": "b", "text": "Trên cơ sở các giá trị văn hóa truyền thống", "isCorrect": true },
+            { "id": "c", "text": "Trên cơ sở sự phát triển của lực lượng sản xuất", "isCorrect": true },
+            { "id": "d", "text": "Tất cả các ý trên đều đúng", "isCorrect": true }
+          ]
+        },
+        {
+          "id": 14,
+          "question": "Ai là người chỉ đạo xây dựng Đề cương về văn hóa Việt Nam trong thời kỳ đổi mới?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Đỗ Mười", "isCorrect": true },
+            { "id": "b", "text": "Lê Duẩn", "isCorrect": false },
+            { "id": "c", "text": "Trường Chinh", "isCorrect": false },
+            { "id": "d", "text": "Đồng chí X", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 15,
+          "question": "Nội dung cơ bản của tư tưởng Hồ Chí Minh về giáo dục là gì?",
+          "type": "multiple",
+          "options": [
+            { "id": "a", "text": "Giáo dục phải toàn diện, phát triển cả về đức, trí, thể, mỹ", "isCorrect": true },
+            { "id": "b", "text": "Giáo dục phải gắn liền với lao động sản xuất", "isCorrect": true },
+            { "id": "c", "text": "Giáo dục phải mang tính chất nhân văn sâu sắc", "isCorrect": true },
+            { "id": "d", "text": "Tất cả các ý trên đều đúng", "isCorrect": true }
+          ]
+        },
+        {
+          "id": 16,
+          "question": "Chủ nghĩa xã hội ở Việt Nam có những đặc điểm gì?",
+          "type": "multiple",
+          "options": [
+            { "id": "a", "text": "Là chế độ xã hội không có giai cấp", "isCorrect": false },
+            { "id": "b", "text": "Là chế độ xã hội có sự quản lý của Nhà nước đối với nền kinh tế", "isCorrect": true },
+            { "id": "c", "text": "Là chế độ xã hội mà trong đó mọi người đều bình đẳng về quyền lợi và nghĩa vụ", "isCorrect": true },
+            { "id": "d", "text": "Tất cả các ý trên đều đúng", "isCorrect": true }
+          ]
+        },
+        {
+          "id": 17,
+          "question": "Ai là người chỉ đạo xây dựng Đề cương về chủ nghĩa xã hội và con đường đi lên chủ nghĩa xã hội ở Việt Nam?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Đỗ Mười", "isCorrect": true },
+            { "id": "b", "text": "Lê Duẩn", "isCorrect": false },
+            { "id": "c", "text": "Trường Chinh", "isCorrect": false },
+            { "id": "d", "text": "Đồng chí X", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 18,
+          "question": "Nội dung cơ bản của tư tưởng Hồ Chí Minh về quốc phòng, an ninh là gì?",
+          "type": "multiple",
+          "options": [
+            { "id": "a", "text": "Quốc phòng, an ninh phải được đặt lên hàng đầu", "isCorrect": true },
+            { "id": "b", "text": "Phải xây dựng quân đội nhân dân cách mạng, chính quy, tinh nhuệ", "isCorrect": true },
+            { "id": "c", "text": "Phải kết hợp chặt chẽ giữa quốc phòng và an ninh", "isCorrect": true },
+            { "id": "d", "text": "Tất cả các ý trên đều đúng", "isCorrect": true }
+          ]
+        },
+        {
+          "id": 19,
+          "question": "Ai là người chỉ đạo xây dựng Đề cương về quốc phòng toàn dân trong thời kỳ đổi mới?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Đỗ Mười", "isCorrect": true },
+            { "id": "b", "text": "Lê Duẩn", "isCorrect": false },
+            { "id": "c", "text": "Trường Chinh", "isCorrect": false },
+            { "id": "d", "text": "Đồng chí X", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 20,
+          "question": "Nội dung cơ bản của tư tưởng Hồ Chí Minh về đối ngoại là gì?",
+          "type": "multiple",
+          "options": [
+            { "id": "a", "text": "Đối ngoại phải phục vụ cho lợi ích quốc gia, dân tộc", "isCorrect": true },
+            { "id": "b", "text": "Phải đa dạng hóa, đa phương hóa các quan hệ quốc tế", "isCorrect": true },
+            { "id": "c", "text": "Phải giữ vững độc lập, tự chủ trong quan hệ quốc tế", "isCorrect": true },
+            { "id": "d", "text": "Tất cả các ý trên đều đúng", "isCorrect": true }
+          ]
+        }
+      ]
+    },
+    {
+      "subjectId": 5,
+      "questions": [
+        {
+          "id": 1,
+          "question": "Chủ nghĩa xã hội khoa học là gì?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Là học thuyết khoa học nghiên cứu về sự hình thành, phát triển và quy luật khách quan của chủ nghĩa xã hội", "isCorrect": true },
+            { "id": "b", "text": "Là học thuyết chính trị của Đảng Cộng sản", "isCorrect": false },
+            { "id": "c", "text": "Là học thuyết kinh tế về chủ nghĩa xã hội", "isCorrect": false },
+            { "id": "d", "text": "Là học thuyết đạo đức về chủ nghĩa xã hội", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 2,
+          "question": "Ai là người sáng lập ra Đảng Cộng sản Việt Nam?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Nguyễn Ái Quốc", "isCorrect": true },
+            { "id": "b", "text": "Lê Nin", "isCorrect": false },
+            { "id": "c", "text": "Trường Chinh", "isCorrect": false },
+            { "id": "d", "text": "Đồng chí X", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 3,
+          "question": "Nội dung cơ bản của tư tưởng Hồ Chí Minh về kinh tế là gì?",
+          "type": "multiple",
+          "options": [
+            { "id": "a", "text": "Phát triển kinh tế phải gắn liền với phát triển văn hóa, xã hội", "isCorrect": true },
+            { "id": "b", "text": "Kinh tế phải do Nhà nước quản lý tập trung", "isCorrect": false },
+            { "id": "c", "text": "Phát triển kinh tế tư nhân là chủ yếu", "isCorrect": false },
+            { "id": "d", "text": "Kinh tế phải phục vụ cho lợi ích của nhân dân", "isCorrect": true }
+          ]
+        },
+        {
+          "id": 4,
+          "question": "Chủ nghĩa xã hội ở Việt Nam được xây dựng trên cơ sở nào?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Trên cơ sở vật chất kỹ thuật đã được hình thành", "isCorrect": true },
+            { "id": "b", "text": "Trên cơ sở các giá trị văn hóa truyền thống", "isCorrect": true },
+            { "id": "c", "text": "Trên cơ sở sự phát triển của lực lượng sản xuất", "isCorrect": true },
+            { "id": "d", "text": "Tất cả các ý trên đều đúng", "isCorrect": true }
+          ]
+        },
+        {
+          "id": 5,
+          "question": "Ai là người chỉ đạo xây dựng Đề cương về chủ nghĩa xã hội và con đường đi lên chủ nghĩa xã hội ở Việt Nam?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Đỗ Mười", "isCorrect": true },
+            { "id": "b", "text": "Lê Duẩn", "isCorrect": false },
+            { "id": "c", "text": "Trường Chinh", "isCorrect": false },
+            { "id": "d", "text": "Đồng chí X", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 6,
+          "question": "Nội dung cơ bản của tư tưởng Hồ Chí Minh về quốc phòng, an ninh là gì?",
+          "type": "multiple",
+          "options": [
+            { "id": "a", "text": "Quốc phòng, an ninh phải được đặt lên hàng đầu", "isCorrect": true },
+            { "id": "b", "text": "Phải xây dựng quân đội nhân dân cách mạng, chính quy, tinh nhuệ", "isCorrect": true },
+            { "id": "c", "text": "Phải kết hợp chặt chẽ giữa quốc phòng và an ninh", "isCorrect": true },
+            { "id": "d", "text": "Tất cả các ý trên đều đúng", "isCorrect": true }
+          ]
+        },
+        {
+          "id": 7,
+          "question": "Ai là người chỉ đạo xây dựng Đề cương về quốc phòng toàn dân trong thời kỳ đổi mới?",
+          "type": "single",
+          "options": [
+            { "id": "a", "text": "Đỗ Mười", "isCorrect": true },
+            { "id": "b", "text": "Lê Duẩn", "isCorrect": false },
+            { "id": "c", "text": "Trường Chinh", "isCorrect": false },
+            { "id": "d", "text": "Đồng chí X", "isCorrect": false }
+          ]
+        },
+        {
+          "id": 8,
+          "question": "Nội dung cơ bản của tư tưởng Hồ Chí Minh về đối ngoại là gì?",
+          "type": "multiple",
+          "options": [
+            { "id": "a", "text": "Đối ngoại phải phục vụ cho lợi ích quốc gia, dân tộc", "isCorrect": true },
+            { "id": "b", "text": "Phải đa dạng hóa, đa phương hóa các quan hệ quốc tế", "isCorrect": true },
+            { "id": "c", "text": "Phải giữ vững độc lập, tự chủ trong quan hệ quốc tế", "isCorrect": true },
+            { "id": "d", "text": "Tất cả các ý trên đều đúng", "isCorrect": true }
+          ]
+        }
+      ]
+    }
+  ],
+  "userProgress": [
+    {
+      "id": "student123",
+      "progress": {
+        "1": {
+          "attempts": 1,
+          "bestScore": 75,
+          "passed": false,
+          "lastAttempt": "2024-01-15T10:30:00Z"
+        }
+      }
+    }
+  ],
+  "batchSchedules": [
+    {
+      "id": 1,
+      "department": "Công nghệ thông tin",
+      "start": "2024-07-10T08:00:00",
+      "end": "2024-07-12T17:00:00",
+      "notes": "Kỳ thi học kỳ 2 năm học 2023-2024"
+    },
+    {
+      "id": 2,
+      "department": "Quản trị kinh doanh",
+      "start": "2024-07-13T08:00:00",
+      "end": "2024-07-15T17:00:00",
+      "notes": "Kỳ thi học kỳ 2 năm học 2023-2024"
+    }
+  ]
+}

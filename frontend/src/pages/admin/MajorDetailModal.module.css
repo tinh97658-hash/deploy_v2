@@ -1,0 +1,320 @@
+/* Major Detail Modal - Matching System Style */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.modalContent {
+  background: #ffffff;
+  border-radius: 10px;
+  width: 95%;
+  max-width: 1200px;
+  max-height: 90vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 14px -2px rgba(0,0,0,.12);
+  border: 1px solid #d9dde3;
+}
+
+/* Header */
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #d9dde3;
+  background: #f8f9fb;
+}
+
+.modalHeader h2 {
+  margin: 0;
+  color: #1f2937;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: 'Inter','Segoe UI',Arial,sans-serif;
+}
+
+.modalHeader p {
+  margin: 0.25rem 0 0 0;
+  color: #5b6472;
+  font-size: 0.9rem;
+}
+
+.closeBtn {
+  background: #ffffff;
+  border: 1px solid #d9dde3;
+  color: #5b6472;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .18s cubic-bezier(.4,0,.2,1);
+}
+
+.closeBtn:hover {
+  background: #f3f4f6;
+  color: #1f2937;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #6b7280;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.closeButton:hover {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+/* Modal Body */
+.modalBody {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Filters Section */
+.filters {
+  display: flex;
+  align-items: flex-end;
+  gap: 1.5rem;
+  padding: 1.5rem 2rem;
+  background: #f8f9fb;
+  border-bottom: 1px solid #d9dde3;
+  flex-wrap: wrap;
+}
+
+.filterGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 200px;
+}
+
+.filterGroup label {
+  font-weight: 500;
+  color: #1f2937;
+  font-size: 0.875rem;
+  font-family: 'Inter','Segoe UI',Arial,sans-serif;
+}
+
+.filterSelect {
+  padding: 0.625rem 0.875rem;
+  border: 1px solid #d9dde3;
+  border-radius: 6px;
+  background: #ffffff;
+  font-size: 0.875rem;
+  color: #1f2937;
+  transition: .18s cubic-bezier(.4,0,.2,1);
+  cursor: pointer;
+  font-family: 'Inter','Segoe UI',Arial,sans-serif;
+}
+
+.filterSelect:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.filterSelect:disabled {
+  background: #f3f4f6;
+  color: #6b7280;
+  cursor: not-allowed;
+  border-color: #e5e7eb;
+}
+
+.exportBtn {
+  background: #15803d;
+  color: white;
+  border: none;
+  padding: 0.625rem 1.25rem;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: .18s cubic-bezier(.4,0,.2,1);
+  box-shadow: 0 1px 2px rgba(0,0,0,.06);
+  font-family: 'Inter','Segoe UI',Arial,sans-serif;
+}
+
+.exportBtn:hover:not(:disabled) {
+  background: #166534;
+}
+
+.exportBtn:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Notice */
+.notice {
+  background: #fef3c7;
+  border: 1px solid #f59e0b;
+  color: #92400e;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  font-weight: 500;
+  font-family: 'Inter','Segoe UI',Arial,sans-serif;
+}
+
+/* Student List */
+.studentList {
+  flex: 1;
+  padding: 1.5rem 2rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.studentList h3 {
+  margin: 0 0 1rem 0;
+  color: #1f2937;
+  font-size: 1.125rem;
+  font-weight: 600;
+  font-family: 'Inter','Segoe UI',Arial,sans-serif;
+}
+
+.tableContainer {
+  flex: 1;
+  overflow: auto;
+  border: 1px solid #d9dde3;
+  border-radius: 6px;
+  background: #ffffff;
+}
+
+.studentTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  font-family: 'Inter','Segoe UI',Arial,sans-serif;
+}
+
+.studentTable thead {
+  background: #f8f9fb;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.studentTable th {
+  padding: 0.875rem 0.75rem;
+  text-align: left;
+  font-weight: 600;
+  color: #1f2937;
+  border-bottom: 1px solid #d9dde3;
+}
+
+.studentTable td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #e5e7eb;
+  vertical-align: middle;
+  color: #5b6472;
+  text-align: left;
+}
+
+.studentTable tbody tr:hover {
+  background: #f8f9fb;
+}
+
+.statusBadge {
+  display: inline-block;
+  padding: 0.25rem 0.625rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-align: center;
+  min-width: 70px;
+  font-family: 'Inter','Segoe UI',Arial,sans-serif;
+}
+
+.statusBadge.passed {
+  background: #e5f7ed;
+  color: #15803d;
+  border: 1px solid #bbf7d0;
+}
+
+.statusBadge.failed {
+  background: #fdecec;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+}
+
+.statusBadge.notTaken {
+  background: #fef3c7;
+  color: #d97706;
+  border: 1px solid #fed7aa;
+}
+
+.noData {
+  text-align: center;
+  color: #6b7280;
+  font-style: italic;
+  padding: 2rem;
+  font-family: 'Inter','Segoe UI',Arial,sans-serif;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .modalContent {
+    width: 98%;
+    margin: 0.5rem;
+  }
+  
+  .modalHeader {
+    padding: 1rem 1.5rem;
+  }
+  
+  .modalHeader h2 {
+    font-size: 1.25rem;
+  }
+  
+  .filters {
+    padding: 1rem 1.5rem;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+  
+  .filterGroup {
+    min-width: auto;
+  }
+  
+  .studentList {
+    padding: 1rem 1.5rem;
+  }
+  
+  .studentTable {
+    font-size: 0.8rem;
+  }
+  
+  .studentTable th,
+  .studentTable td {
+    padding: 0.5rem 0.375rem;
+  }
+  
+  .statusBadge {
+    min-width: 60px;
+    font-size: 0.7rem;
+  }
+}

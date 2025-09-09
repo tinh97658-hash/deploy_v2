@@ -1,0 +1,98 @@
+/* Scoped sizing for student profile page */
+:global(.student-profile) {
+	font-size: 15px;
+}
+
+:global(.student-profile h2) {
+	font-size: 1.35rem;
+}
+
+/* Form controls */
+:global(.student-profile .form-control) {
+	font-size: 15px;
+	padding: 10px 12px;
+	border: 1px solid #e5e7eb;
+	border-radius: 6px;
+}
+
+/* Primary button */
+:global(.student-profile .btn) {
+	font-size: 15px;
+	padding: 10px 14px;
+	border-radius: 6px;
+}
+
+:global(.student-profile .back-btn) {
+	background: #f1f5f9;
+	color: #0f172a;
+	border: 1px solid #e2e8f0;
+}
+
+:global(.student-profile .back-btn:hover) {
+	background: #e2e8f0;
+}
+
+/* Definition list readability */
+:global(.student-profile dl) {
+	row-gap: 12px !important;
+}
+:global(.student-profile dt) {
+	color: #475569;
+	font-weight: 600;
+}
+:global(.student-profile dd) {
+	color: #111827;
+	font-weight: 600;
+}
+
+/* New layout classes */
+:global(.student-profile .profile-grid) {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1.5rem;
+}
+
+:global(.student-profile .profile-card) {
+	background: #fff;
+	border: 1px solid #eee;
+	border-radius: 8px;
+	padding: 1rem;
+	text-align: left;
+}
+
+:global(.student-profile .profile-dl) {
+	display: grid;
+	grid-template-columns: 160px 1fr;
+	row-gap: 10px;
+}
+
+:global(.student-profile .form-grid) {
+	display: grid;
+	row-gap: 12px;
+}
+
+:global(.student-profile .update-btn) {
+	width: 100%;
+}
+
+/* Mobile boost */
+@media (max-width: 640px) {
+	:global(.student-profile) { font-size: 16px; }
+	:global(.student-profile h2) { font-size: 1.5rem; }
+	:global(.student-profile .form-control),
+	:global(.student-profile .btn) { font-size: 16px; padding: 12px 14px; }
+}
+
+/* Mobile improvements */
+@media (max-width: 768px) {
+	:global(.student-profile .profile-grid) {
+		grid-template-columns: 1fr;
+	}
+	:global(.student-profile .profile-dl) {
+		grid-template-columns: 120px 1fr;
+	}
+	:global(.student-profile .profile-card) {
+		padding: 1rem 1rem 1.25rem;
+	}
+}
+

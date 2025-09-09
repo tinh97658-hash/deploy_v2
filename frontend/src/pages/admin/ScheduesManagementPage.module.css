@@ -1,0 +1,10 @@
+ .schedule-wrapper { padding: 20px; }
+ .schedule-form { margin-bottom: 20px; display: flex; flex-direction: column; gap: 10px; }
+ .schedule-form .row { display: flex; gap: 10px; }
+ .schedule-form input, .schedule-form select { padding: 6px 8px; }
+ .btn-primary { background:#2563eb; color:#fff; border:none; padding:8px 14px; margin-right:8px; cursor:pointer; }
+ .btn-danger { background:#dc2626; color:#fff; border:none; padding:8px 14px; cursor:pointer; }
+ .schedule-table { width:100%; border-collapse: collapse; }
+ .schedule-table th, .schedule-table td { border:1px solid #ddd; padding:6px 8px; font-size:14px; }
+ .schedule-table th { background:#f3f4f6; }
+ .schedule-loading, .schedule-error { padding:30px; }

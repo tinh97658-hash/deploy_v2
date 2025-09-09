@@ -1,0 +1,10 @@
+.student-menu{position:relative;}
+.student-menu .menu-trigger{display:flex;align-items:center;gap:.6rem;background:#2e7d32;color:#fff;border:none;border-radius:22px;padding:.55rem .9rem;cursor:pointer;font-size:15px}
+.student-menu .menu-trigger .avatar{background:#fff1;border-radius:50%;width:26px;height:26px;display:inline-flex;align-items:center;justify-content:center}
+.student-menu .menu-trigger .name{max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.student-menu .menu-dropdown{position:absolute;right:0;top:110%;background:#fff;border:1px solid #e5e7eb;border-radius:8px;box-shadow:0 8px 28px rgba(0,0,0,.12);min-width:220px;z-index:50}
+.student-menu .menu-item{display:flex;align-items:center;gap:.6rem;width:100%;background:#fff;border:0;padding:.7rem 1rem;text-align:left;cursor:pointer;font-size:15px}
+.student-menu .menu-item:hover{background:#f5f7fb}
+.student-menu .menu-item.danger{color:#b00020}
+.student-menu .menu-sep{height:1px;background:#eee;margin:.25rem 0}
+@media(max-width:480px){.student-menu .menu-trigger{padding:.5rem .7rem}.student-menu .menu-trigger .name{display:none}}

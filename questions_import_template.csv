@@ -1,0 +1,10 @@
+question,type,optionA,optionB,optionC,optionD,correctAnswer
+Thủ đô của Việt Nam là gì?,single_choice,Hà Nội,TP.HCM,Đà Nẵng,Cần Thơ,A
+JavaScript là ngôn ngữ gì?,single_choice,Ngôn ngữ lập trình,Ngôn ngữ đánh dấu,Cơ sở dữ liệu,Hệ điều hành,A
+Những công nghệ nào được dùng cho web frontend?,multiple_choice,HTML,CSS,JavaScript,PHP,ABC
+Python được tạo ra bởi ai?,single_choice,Guido van Rossum,Mark Zuckerberg,Bill Gates,Steve Jobs,A
+Cơ sở dữ liệu nào là NoSQL?,multiple_choice,MongoDB,MySQL,Redis,PostgreSQL,AC
+Giá trị của π gần đúng là?,single_choice,3.14159,3.14,22/7,3.0,A
+Năm Việt Nam độc lập là?,single_choice,1945,1954,1975,1976,A
+Khi nào JavaScript được tạo ra?,single_choice,1995-05-23,1990-01-01,2000-12-31,1985-06-15,A
+Dân số Việt Nam khoảng bao nhiêu triệu người?,single_choice,97.5,85.2,110.3,75.8,A
